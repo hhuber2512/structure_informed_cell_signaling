@@ -1,0 +1,2 @@
+﻿parameter,predicted_Kd(M),reported_Kd(M),AF_ranking_score,Notes
+k1,1.01E-07,5.00E-09,1,Set ranking score = 1 for experimental structure

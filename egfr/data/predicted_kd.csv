@@ -1,0 +1,10 @@
+﻿parameter,predicted_Kd(M),reported_Kd(M),AF_ranking_score,AF_ipTM,AF_fraction_disordered,Notes
+k5,0.00000606,3.33E-09,0.46,0.36,0.19,
+k13,1.35E-10,6.67E-09,0.54,0.39,0.29,
+k21,7.80E-09,3.33E-08,0.67,0.54,0.34,
+k1,3.70E-08,2.00E-08,0.57,0.45,0.24,Table II of Kholodenko notes that the reported k1 value was rescaled (x0.03) to make simulations compatable between compartments. We did the same scaling to the predicted Kd value for fair comparison
+k12,8.64E-07,1.50E-08,0.53,0.41,0.19,
+k19,2.22E-05,2.14E-09,0.43,0.35,0.15,
+k17,7.80E-09,3.33E-08,0.51,0.37,0.27,
+k9,5.63E-09,1.67E-08,0.53,0.41,0.22,
+k10,3.07E-05,6.00E-09,0.47,0.35,0.23,

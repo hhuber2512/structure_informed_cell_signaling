@@ -1,0 +1,18 @@
+using Pkg
+
+Pkg.add(name="AffineInvariantMCMC", version="1.3.0")
+Pkg.add(name="BenchmarkTools", version="v1.6.0")
+Pkg.add(name="CSV", version="0.10.15")
+Pkg.add(name="DataFrames", version="1.7.0")
+Pkg.add(name="DifferentialEquations", version="7.16.1")
+Pkg.add(name="Distributions", version="0.25.118")
+Pkg.add(name="ForwardDiff", version="0.10.38")
+Pkg.add(name="GlobalSensitivity", version="2.7.0")
+Pkg.add(name="HypothesisTests", version="0.11.5")
+Pkg.add(name="KernelDensity", version="0.6.9")
+Pkg.add(name="MCMCChains", version="6.0.7")
+Pkg.add(name="NBInclude", version="2.4.0")
+Pkg.add(name="Plots", version="1.40.12")
+Pkg.add(name="StableRNGs", version="1.0.2")
+Pkg.add(name="StatsBase", version="0.34.5")
+Pkg.add(name="Serialization", version="1.11.0")
