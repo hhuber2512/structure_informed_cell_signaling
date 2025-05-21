@@ -435,4 +435,5 @@ doc/*
 *.dict
 *.pdf
 *.txt
+*wip.ipynb
 
