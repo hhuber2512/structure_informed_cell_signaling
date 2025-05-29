@@ -260,7 +260,8 @@ function return_gpcr_ligand_doses_naming()
 end
 
 function sensitivity_scatter_plot(sensitivity, diff_med, color)
-    p = scatter(sensitivity, diff_med, color=color,clims=(-1,1))
+    zero_mask = sensitivity .!= 0.0 #sort out sensitivity of 0, where t=0
+    p = scatter(sensitivity[zero_mask], diff_med[zero_mask], color=color,clims=(-1,1))
     plot!(dpi=300,size=(690,690),legendfontsize=8,titlefontsize=8,
     tickfontsize=8,guidefontsize=8,left_margin = 8Plots.mm, bottom_margin = 5Plots.mm)
     return p

@@ -10,6 +10,13 @@ function local_sensitivity_analysis(p, prob, solver_inputs,species_index)
     abstol=solver_inputs["abstol"], saveat = solver_inputs["saveat"])[species_index,:]
 end
 
+function local_sensitivity_analysis_absolute(p, prob, solver_inputs,species_index)
+    p_new = p
+    prob = remake(prob, p = p_new)
+    solve(prob, solver_inputs["solver"], reltol=solver_inputs["reltol"], 
+    abstol=solver_inputs["abstol"], saveat = solver_inputs["saveat"])[species_index,:]
+end
+
 function local_sensitivity_analysis_kd(p, prob, solver_inputs, species_index, kf, kb_indices, kf_indices, nonbinding_indices)
     n_kd = length(kf)
     #convert back to kb and kf form
